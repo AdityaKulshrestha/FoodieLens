@@ -29,7 +29,6 @@ async def read_data(request: Request):
 @app.post("/submit")
 async def generate_recipe(
         request: Request,
-        image: str = Form(...),
         description: str = Form(...),
         image_file: UploadFile = File(...),
 ):
